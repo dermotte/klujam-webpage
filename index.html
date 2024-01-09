@@ -7,22 +7,59 @@
 		<title>Klagenfurt Game Jam</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+		<!-- Icon -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+		<!-- FONT LATO -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
         <link rel="stylesheet" href="reveal/reveal.css">
         <link rel="stylesheet" href="reveal/reset.css">
-		<link rel="stylesheet" href="reveal/theme/black.css" id="theme">
+		<link rel="stylesheet" href="reveal/theme/simple.css" id="theme">
 
-        <!--link rel="stylesheet" href="reveal/plugin/highlight/monokai.css"-->
+        <link rel="stylesheet" href="reveal/plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="css/klujam.css">
 	</head>
 
 	<body>
-		<div style="position: absolute; width: 100%; height: 100%; background-position: 50% 50% ; background-image: url(images/pattern.png); background-repeat: repeat; z-index: 1">
-        </div>
 		<div class="reveal">
 			<div class="slides">
 				<section data-background-video="images/gamejamvideo.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.5">
+					<!--div style="position: absolute; width: 100%; height: 100%; background-position: 50% 50% ; background-image: url(images/pattern.png); background-repeat: repeat; z-index: 1">
+					</div-->
 					<h2>Klagenfurt Game Jam</h2>
                     <!--p>Save the date: Apr 10-12, 2024</p-->
-                    <p>Play the games from the last jam at <a href="https://itch.io/jam/7th-winter-game-jam/entries">itch.io</a></p>
+                    <p>10 years, 20 Game Jams</p>
+				</section>
+				<section data-background-image="images/bg01.jpg" data-background-size="100%" data-background-repeat="repeat">
+					<h2>Previous jams</h2>
+					<ul>
+						<li><a href="https://itch.io/jam/7th-winter-game-jam">7th Klagenfurt Winter Jam - Dec. 15-17, 2023</a></li>
+						<li><a href="https://itch.io/jam/10th-klujam">10th Klagenfurt Game Jam - June 2-4, 2023</a></li>
+						<li><a href="https://itch.io/jam/2nd-huettenjam">2nd Hüttenjam - April 13-16, 2023</a></li>
+						<li><a href="https://itch.io/jam/6th-winter-game-jam">6th Klagenfurt Winter Jam - Dec. 9-11, 2022</a></li>
+						<li><a href="https://itch.io/jam/9th-klujam">9th Klagenfurt Game Jam - Apr 22-24, 2022</a></li>
+						<li><a href="https://itch.io/jam/5th-winter-game-jam">5th Winter Game Jam - Dec 17-19, 2021</a></li>
+						<li><a href="https://itch.io/jam/8thklujam">8th Klagenfurt Game Jam - May 28-30, 2021</a></li>
+						<li><a href="https://itch.io/jam/4th-winter-gamejam">4th Winter Game Jam - Dec 18-20, 2020</a></li>
+						<li><a href="https://itch.io/jam/7thklujam">7th Klagenfurt Game Jam - Apr 24-26, 2020</a></li>
+					</ul>
+				</section>
+				<section data-background-image="images/bg02.jpg" data-background-size="100%" data-background-repeat="repeat">
+					<h2>Even more</h2>
+					<ul>
+						<li><a href="https://itch.io/jam/3rd-winterjam">3rd Winter Game Jam - Dec 20-22, 2019</a></li>
+						<li><a href="https://itch.io/jam/huettenjam">Hüttenjam - Sep 26-29, 2019</a></li>
+						<li><a href="https://itch.io/jam/6thklujam">6th Klagenfurt Game Jam - Apr 26-28, 2019</a></li>
+						<li><a href="https://itch.io/jam/2nd-winter-game-jam">2nd Winter Game Jam - Dec 14-16, 2018</a></li>
+						<li><a href="https://itch.io/jam/5th-klagenfurt-gamejam">5th Klagenfurt Game Jam - Apr 27-28, 2018</a></li>
+						<li><a href="https://itch.io/jam/1st-aau-winter-game-jam">1st Winter Game Jam - Dec 15-17 2017</a></li>
+						<li><a href="https://itch.io/jam/klujam2017">4th Klagenfurt Game Jam - Apr 28-30, 2017</a></li>
+						<li><a href="https://itch.io/jam/summer-jam-klagenfurt-2016">Summerjam - Aug 5-7 2016</a></li>
+						<li><a href="https://itch.io/jam/klujam2016">3rd Klagenfurt Game Jam, Apr 15-17, 2016</a></li>
+					</ul>
 				</section>
 			</div>
             <!-- Markdown Slide -->
@@ -34,20 +71,18 @@
 		</div>
 
         <script src="reveal/reveal.js"></script>
-        <!--script src="reveal/plugin/markdown/markdown.js"></script>
+        <script src="reveal/plugin/markdown/markdown.js"></script>
         <script src="reveal/plugin/highlight/highlight.js"></script>
         <script src="reveal/plugin/notes/notes.js"></script>
-        <script src="reveal/plugin/math/math.js"></script-->
+        <script src="reveal/plugin/math/math.js"></script>
 
 		<script>
 
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+				view: 'scroll',
+        		hash: true,
 
-				// plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 
 		</script>
